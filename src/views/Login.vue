@@ -226,6 +226,7 @@ export default {
   name: "Login",
   data: () => ({
     step: 1,
+    token: "",
     SignUp: {
       email: "",
       password: "",
@@ -237,6 +238,13 @@ export default {
     },
     errors: {},
   }),
+  mounted() {
+    this.token = localStorage.getItem("user");
+    console.log(this.token);
+    if (this.token) {
+      this.$router.push({ path: "/createtodo" });
+    }
+  },
   methods: {
     Signup() {
       this.errors = {};

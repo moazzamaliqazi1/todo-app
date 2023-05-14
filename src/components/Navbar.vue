@@ -128,3 +128,14 @@ export default {
   },
 };
 </script>
+<style scoped>
+@media (max-width: 390px) {
+  body,
+  html {
+    font-size: 8px !important;
+  }
+  .navbar-collapse {
+    display: flex;
+  }
+}
+</style>

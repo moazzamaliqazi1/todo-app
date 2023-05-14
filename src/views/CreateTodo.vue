@@ -116,15 +116,18 @@
     </section>
 
     <!-- list end -->
+    <Footer></Footer>
   </v-app>
 </template>
 
 <script>
 import Navbar from "../components/Navbar.vue";
+import Footer from "../components/Footer.vue";
 export default {
   name: "CreateTodo",
   components: {
     Navbar,
+    Footer,
   },
   data: () => ({
     title: "",

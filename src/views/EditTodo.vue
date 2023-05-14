@@ -33,15 +33,18 @@
         </v-card-actions>
       </v-card>
     </v-container>
+    <Footer></Footer>
   </v-app>
 </template>
 
 <script>
 import Navbar from "../components/Navbar.vue";
+import Footer from "../components/Footer.vue";
 export default {
   name: "EditTodo",
   components: {
     Navbar,
+    Footer,
   },
   data: () => ({
     item: {
